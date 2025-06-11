@@ -64,16 +64,16 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				smartfood: {
-					50: '#f0fdf4',
-					100: '#dcfce7',
-					200: '#bbf7d0',
-					300: '#86efac',
-					400: '#4ade80',
-					500: '#22c55e',
-					600: '#16a34a',
-					700: '#15803d',
-					800: '#166534',
-					900: '#14532d',
+					50: '#f0f9f4',
+					100: '#dcf4e6',
+					200: '#bce8d1',
+					300: '#8dd5b3',
+					400: '#56bc8e',
+					500: '#3ba373',
+					600: '#2d825c',
+					700: '#256749',
+					800: '#1f523c',
+					900: '#1a4332',
 				}
 			},
 			borderRadius: {
@@ -128,7 +128,7 @@ export default {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'hero-pattern': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-				'food-gradient': 'linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #16a34a 100%)'
+				'food-gradient': 'linear-gradient(135deg, #56bc8e 0%, #3ba373 50%, #2d825c 100%)'
 			}
 		}
 	},
