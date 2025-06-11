@@ -24,7 +24,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-smartfood-50 via-white to-smartfood-100">
+    <div className="min-h-screen bg-smartfood-50">
       <Header currentView={currentView} onViewChange={handleViewChange} />
       
       {currentView === 'home' && (
@@ -51,10 +51,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-smartfood-300 to-smartfood-100 bg-clip-text text-transparent">
+              <h3 className="text-2xl font-bold mb-4 text-smartfood-200">
                 SmartFood
               </h3>
-              <p className="text-smartfood-200">
+              <p className="text-smartfood-300">
                 Platform berbasis AI untuk deteksi makanan dan informasi gizi otomatis
               </p>
             </div>

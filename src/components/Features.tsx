@@ -10,42 +10,42 @@ const Features = () => {
       title: "Pengenalan Makanan Otomatis",
       description: "AI canggih yang mampu mengenali 50+ jenis makanan populer dari foto yang Anda ambil",
       badge: "AI Powered",
-      color: "bg-blue-500"
+      color: "bg-smartfood-500"
     },
     {
       icon: BarChart3,
       title: "Estimasi Kalori & Nutrisi",
       description: "Informasi lengkap kalori, protein, lemak, dan karbohidrat berdasarkan database nutrisi terpercaya",
       badge: "Akurat",
-      color: "bg-green-500"
+      color: "bg-smartfood-600"
     },
     {
       icon: AlertTriangle,
       title: "Deteksi Potensi Alergi",
       description: "Identifikasi bahan makanan yang berpotensi menyebabkan alergi seperti kacang, susu, dan telur",
       badge: "Safety First",
-      color: "bg-orange-500"
+      color: "bg-smartfood-700"
     },
     {
       icon: History,
       title: "Riwayat Makanan",
       description: "Pantau pola makan harian dan mingguan untuk membantu mencapai target kesehatan Anda",
       badge: "Tracking",
-      color: "bg-purple-500"
+      color: "bg-smartfood-500"
     },
     {
       icon: User,
       title: "Profil Personal",
       description: "Rekomendasi nutrisi yang disesuaikan dengan usia, berat badan, tinggi, dan target kesehatan",
       badge: "Personalized",
-      color: "bg-pink-500"
+      color: "bg-smartfood-600"
     },
     {
       icon: Shield,
       title: "Keamanan Data",
       description: "Data pribadi dan riwayat makanan dilindungi dengan enkripsi tingkat enterprise",
       badge: "Secure",
-      color: "bg-indigo-500"
+      color: "bg-smartfood-700"
     }
   ];
 
@@ -56,7 +56,7 @@ const Features = () => {
           <Badge className="mb-4 bg-smartfood-100 text-smartfood-800 border-smartfood-300">
             ✨ Fitur Unggulan
           </Badge>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-smartfood-600 to-smartfood-800 bg-clip-text text-transparent">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-smartfood-800">
             Teknologi Terdepan untuk
             <br />
             Gaya Hidup Sehat
@@ -90,7 +90,7 @@ const Features = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-smartfood-100 to-smartfood-200 rounded-3xl p-8 max-w-4xl mx-auto">
+          <div className="bg-smartfood-100 rounded-3xl p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-smartfood-800 mb-4">
               Mengapa Memilih SmartFood?
             </h3>

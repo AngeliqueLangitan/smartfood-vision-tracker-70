@@ -10,8 +10,8 @@ interface HeroProps {
 const Hero = ({ onStartScanning }: HeroProps) => {
   return (
     <section className="relative overflow-hidden py-20 lg:py-32">
-      <div className="absolute inset-0 bg-gradient-to-br from-smartfood-100/50 to-smartfood-200/30 -z-10" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-smartfood-300/20 rounded-full blur-3xl -z-10" />
+      <div className="absolute inset-0 bg-smartfood-50 -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-smartfood-200/50 rounded-full blur-3xl -z-10" />
       
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -19,7 +19,7 @@ const Hero = ({ onStartScanning }: HeroProps) => {
             🚀 Platform AI Terdepan untuk Deteksi Makanan
           </Badge>
           
-          <h1 className="text-5xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-smartfood-600 via-smartfood-700 to-smartfood-800 bg-clip-text text-transparent leading-tight">
+          <h1 className="text-5xl lg:text-7xl font-bold mb-8 text-smartfood-800 leading-tight">
             Kenali Makananmu,
             <br />
             Jaga Kesehatanmu
@@ -34,7 +34,7 @@ const Hero = ({ onStartScanning }: HeroProps) => {
             <Button 
               onClick={onStartScanning}
               size="lg" 
-              className="bg-food-gradient hover:scale-105 transition-transform text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl"
+              className="bg-smartfood-600 hover:bg-smartfood-700 hover:scale-105 transition-transform text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl"
             >
               <Camera className="w-6 h-6 mr-3" />
               Mulai Scan Makanan
