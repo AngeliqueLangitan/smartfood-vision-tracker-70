@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -10,16 +9,22 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import FoodScanner from "@/components/FoodScanner";
 import Dashboard from "@/components/Dashboard";
+import NutritionPage from "@/features/nutrition/pages/NutritionPage";
 
 const Index = () => {
-  const [currentView, setCurrentView] = useState<'home' | 'scanner' | 'dashboard'>('home');
+  const [currentView, setCurrentView] = useState<'home' | 'scanner' | 'dashboard' | 'nutrition'>('home');
   const { toast } = useToast();
 
-  const handleViewChange = (view: 'home' | 'scanner' | 'dashboard') => {
+  const handleViewChange = (view: 'home' | 'scanner' | 'dashboard' | 'nutrition') => {
     setCurrentView(view);
     toast({
       title: "Navigasi",
-      description: `Beralih ke ${view === 'home' ? 'beranda' : view === 'scanner' ? 'scanner makanan' : 'dashboard'}`,
+      description: `Beralih ke ${
+        view === 'home' ? 'beranda' : 
+        view === 'scanner' ? 'scanner makanan' : 
+        view === 'nutrition' ? 'nutrition calculator' :
+        'dashboard'
+      }`,
     });
   };
 
@@ -37,6 +42,12 @@ const Index = () => {
       {currentView === 'scanner' && (
         <div className="animate-slide-up">
           <FoodScanner onBackToHome={() => handleViewChange('home')} />
+        </div>
+      )}
+      
+      {currentView === 'nutrition' && (
+        <div className="animate-slide-up">
+          <NutritionPage />
         </div>
       )}
       

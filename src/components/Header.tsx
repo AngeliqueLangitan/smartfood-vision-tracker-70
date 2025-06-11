@@ -1,11 +1,11 @@
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Camera, BarChart3, Home, Menu } from "lucide-react";
+import { Camera, BarChart3, Home, Menu, Calculator } from "lucide-react";
 
 interface HeaderProps {
-  currentView: 'home' | 'scanner' | 'dashboard';
-  onViewChange: (view: 'home' | 'scanner' | 'dashboard') => void;
+  currentView: 'home' | 'scanner' | 'dashboard' | 'nutrition';
+  onViewChange: (view: 'home' | 'scanner' | 'dashboard' | 'nutrition') => void;
 }
 
 const Header = ({ currentView, onViewChange }: HeaderProps) => {
@@ -41,6 +41,14 @@ const Header = ({ currentView, onViewChange }: HeaderProps) => {
             >
               <Camera className="w-4 h-4" />
               <span>Scanner</span>
+            </Button>
+            <Button
+              variant={currentView === 'nutrition' ? 'default' : 'ghost'}
+              onClick={() => onViewChange('nutrition')}
+              className="flex items-center space-x-2"
+            >
+              <Calculator className="w-4 h-4" />
+              <span>Nutrition</span>
             </Button>
             <Button
               variant={currentView === 'dashboard' ? 'default' : 'ghost'}
